@@ -2,10 +2,11 @@
     flex: 60%;
     margin: 0 20px;
     /* margin-left: 50; */
+    background-color: black;
 }
 
 .feed__inputContainer {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     padding: 10px;
     padding-bottom: 20px;
     border-radius: 10px;
@@ -13,12 +14,13 @@
 }
 
 .feed__input {
-    border: 1px solid lightgray;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 30px;
     display: flex;
     padding: 10px;
     color: gray;
     padding-left: 15px;
+    background-color: white;
 }
 
 .feed__input > form {

@@ -10,6 +10,8 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import { useDispatch , useSelector } from "react-redux"
 import { auth } from "./firebase"
 import { logout, selectUser } from "./features/userSlice"
+import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
+
 
 function Header() {
 
@@ -39,10 +41,9 @@ function Header() {
             <HeaderOption Icon={SupervisorAccountIcon}title="My Network" />
             <HeaderOption Icon={BusinessCenterIcon}title="Jobs" />
             <HeaderOption Icon={ChatIcon}title="Messaging" />
-            <HeaderOption avatar={ false } Icon={NotificationsIcon}title="Notifications" />
-            <HeaderOption avatar={ true }title="Me" 
-                          onClick={logoutOfApp}
-                          />
+            <HeaderOption Icon={NotificationsIcon}title="Notifications" />
+            <HeaderOption avatar={ true }title="Profile"/>
+            <HeaderOption Icon={LogoutOutlinedIcon}title="Log_Out" onClick={logoutOfApp} />
 
       </div>
     </div>

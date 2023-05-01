@@ -20,8 +20,8 @@ function Widgets() {
   return (
     <div className="widgets">
       <div className="widgets__header">
-        <h2>News</h2>
-        <InfoIcon />
+        <h2>NewsFeed</h2>
+        <InfoIcon />   
       </div>
 
       { newsArticle("Tech Connect is up", "Top News - 1,000,000 readers")}

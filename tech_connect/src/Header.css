@@ -3,8 +3,8 @@
   top: 0;
   display: flex;
   justify-content: space-evenly;
-  border-bottom: 0.1px solid lightgray;
-  background-color: white;
+  border-bottom: 0.1px solid rgb(0, 0, 0);
+  background-color: #000000;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;

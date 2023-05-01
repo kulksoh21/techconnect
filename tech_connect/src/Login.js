@@ -52,28 +52,39 @@ function Login() {
     };
 
   return (
-    <div className="login">
-      <img src="icons8-linkedin.svg" alt="" />
+        <div className="home">
+          <div className="login">
+            <img src="icons8-linkedin.svg" alt="" />
 
-      <form>
-        <input value={name} onChange={e => setName(e.target.value)} placeholder="Full Name (required for registration)" type="text" />
+            <form>
+              <input value={name} onChange={e => setName(e.target.value)} placeholder="Full Name (required for registration)" type="text" />
+              <label>Full Name</label>
+              <input value={profilePic} onChange={e => setProfilePic(e.target.value)} placeholder="Profile pic URL (optional)" type="text" />
 
-        <input value={profilePic} onChange={e => setProfilePic(e.target.value)} placeholder="Profile pic URL (optional)" type="text" />
+              <input value={email} onChange={e => setEmail(e.target.value)} 
+              placeholder="Email Address" 
+              type="email" 
+              />
 
-        <input value={email} onChange={e => setEmail(e.target.value)} 
-        placeholder="Email Address" 
-        type="email" 
-        />
+              <input value={password} onChange={e => setPassword(e.target.value)}placeholder="Password" type="password" />
 
-        <input value={password} onChange={e => setPassword(e.target.value)}placeholder="Password" type="password" />
+              <button type="submit" onClick={loginToApp}>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                Sign In</button>
+            </form>
 
-        <button type="submit" onClick={loginToApp}>Sign In</button>
-      </form>
-
-      <p>Not A Member?{" "}
-            <span className="login__register" onClick={register}>Register Now</span>
-      </p>
-    </div>
+            <p>Not A Member?{" "}
+                  <span className="login__register" onClick={register}>Register Now</span>
+            </p>
+ 
+          </div>
+          {/* <div className="hero">
+            <img src="hero.png" alt="" width="500px" height="500px"/>
+          </div> */}
+        </div>
   )
 }
 
